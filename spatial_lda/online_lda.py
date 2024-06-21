@@ -28,7 +28,7 @@ from sklearn.decomposition._online_lda_fast import (mean_change, _dirichlet_expe
 
 from tqdm.auto import tqdm
 
-EPS = np.finfo(np.float).eps
+EPS = np.finfo(np.float64).eps
 
 
 def _update_doc_distribution(X, exp_topic_word_distr, doc_topic_prior,
